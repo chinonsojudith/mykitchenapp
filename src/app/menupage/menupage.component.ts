@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';    //importing from Angular
 import { OrderDetailsService } from '../services/order-details.service';
 @Component({
   selector: 'app-menupage',
@@ -7,7 +7,7 @@ import { OrderDetailsService } from '../services/order-details.service';
   styleUrls: ['./menupage.component.css']
 })
 export class MenupageComponent implements OnInit {
-
+  // creating an instance of it through dependency injection within the constructor() function.
   constructor(private param:ActivatedRoute,private service:OrderDetailsService) { }
   getMenuId: any;
   menuData: any;
