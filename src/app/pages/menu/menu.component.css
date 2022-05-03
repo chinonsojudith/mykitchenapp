@@ -1,0 +1,36 @@
+.foodbox{
+    padding:10px 10px;
+}
+.foodbox img{
+    width:100%;
+    height:250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.foodbox h1{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.buybtn{
+    color: #fff;
+    background-color:var(--primary-color);
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size:16px;
+    border-radius:5px;
+    cursor: pointer;
+
+
+}
+/* @media screen and (max-width: 768px){
+    .row{
+        display: block;
+        width: 100%;
+        
+    }
+    .foodbox img{
+        width: 100%;
+    }
+}
+ */
