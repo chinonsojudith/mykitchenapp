@@ -13,6 +13,7 @@ export class MenupageComponent implements OnInit {
   menuData: any;
    
   ngOnInit(): void {
+    // to get the id from the url
     this.getMenuId = this.param.snapshot.paramMap.get('id');
     if(this.getMenuId){
      this.menuData = this.service.foodDetails.filter((value) =>{

@@ -1,12 +1,12 @@
 <div class="container mt-5 mb-5">
     <div class="row">
-        <div class="col-4" *ngFor="let food of foodData">    <!---to loop through the  array of object in my service-->
+        <div class="col-lg-4" *ngFor="let food of foodData">    <!---to loop through the  array of object in my service-->
             <div class="foodbox  mt-3 mb-3">
                 <!--using interpolation to access the value from the array of object-->
                 <img src="{{food.foodImg}}">     
                 <h1>{{food.foodName}}</h1>
                 <p>{{food.foodDetails}}</p>
-                <p>{{food.foodPrice}}</p>
+                <p>{{food.foodPrice | currency:"USD"}}</p>
                 <br>
                 <a class="buybtn"[routerLink]="['/menu',food.id]">Buy Now <i class="bi bi-bag"></i></a>
             </div>
